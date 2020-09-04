@@ -15,7 +15,7 @@ class JournalbeatCharm(CharmBase):
         """Initialize charm, configure states, and events to observe."""
         super().__init__(*args)
         self.filebeat_requires = BeatsRequires(self, "beats")
-        self._elastic_ops_manager = ElasticOpsManager("filebeat")
+        self._elastic_ops_manager = ElasticOpsManager("journalbeat")
         self.stored.set_default(
             endpoint_address=None,
         )
