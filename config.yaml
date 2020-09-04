@@ -1,0 +1,12 @@
+options:
+  logging-hosts:
+    type: string
+    default: ""
+    description: >-
+      'User defined logging hosts to send logs to.
+       Example: graylog-01:5044'
+  logpath:
+    type: string
+    default: "/var/log/*.log /var/log/*/*.log"
+    description: >-
+      'Space separated log paths to monitor. Can contain wildcards.'
